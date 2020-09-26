@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State
+    var text: String = "Example"
+    
+    @State
+    var value: Bool = false
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        UndoProvider(self.$value) { value in
+            Toggle(isOn: value) {
+                Text("Hello")
+            }
+        }
+        Toggle(isOn: self.$value) {
+            Text("Not wrapped")
+        }
     }
 }
 

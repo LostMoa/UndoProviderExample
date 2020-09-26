@@ -13,6 +13,8 @@
 		2C01BB412508A2D300B0248B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C01BB2C2508A2D000B0248B /* ContentView.swift */; };
 		2C01BB422508A2D300B0248B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C01BB2D2508A2D300B0248B /* Assets.xcassets */; };
 		2C01BB432508A2D300B0248B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C01BB2D2508A2D300B0248B /* Assets.xcassets */; };
+		2C01BB4D2508A2E600B0248B /* UndoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C01BB4C2508A2E600B0248B /* UndoProvider.swift */; };
+		2C01BB4E2508A2E600B0248B /* UndoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C01BB4C2508A2E600B0248B /* UndoProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		2C01BB3A2508A2D300B0248B /* UndoProvider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UndoProvider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C01BB3C2508A2D300B0248B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C01BB3D2508A2D300B0248B /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		2C01BB4C2508A2E600B0248B /* UndoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 				2C01BB2B2508A2D000B0248B /* UndoProviderApp.swift */,
 				2C01BB2C2508A2D000B0248B /* ContentView.swift */,
 				2C01BB2D2508A2D300B0248B /* Assets.xcassets */,
+				2C01BB4C2508A2E600B0248B /* UndoProvider.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -188,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C01BB402508A2D300B0248B /* ContentView.swift in Sources */,
+				2C01BB4D2508A2E600B0248B /* UndoProvider.swift in Sources */,
 				2C01BB3E2508A2D300B0248B /* UndoProviderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C01BB412508A2D300B0248B /* ContentView.swift in Sources */,
+				2C01BB4E2508A2E600B0248B /* UndoProvider.swift in Sources */,
 				2C01BB3F2508A2D300B0248B /* UndoProviderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,7 +327,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6XLR8ZVG3B;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -343,7 +349,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6XLR8ZVG3B;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -366,9 +372,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6XLR8ZVG3B;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
@@ -390,9 +397,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6XLR8ZVG3B;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
