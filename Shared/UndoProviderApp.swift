@@ -11,7 +11,10 @@ import SwiftUI
 struct UndoProviderApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().frame(
+                minWidth: 200,
+                minHeight: 300
+            )
         }
     }
 }
